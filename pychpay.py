@@ -172,8 +172,6 @@ def verify(plain, check):
     hb = sha1_128(plain)
     hbhex = hb.encode("hex").upper()
     rbhex = rsa_decrypt(PUB_KEY_INFO, check)
-    print hbhex
-    print rbhex
     return True if hbhex == rbhex else False
 
 
