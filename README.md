@@ -29,6 +29,7 @@ pychpay是银联商户代付的python client，主要提供对字符串加密和
         from pychapy import verify
         plain = "xxxxxx"    # 待验证明文
         check = "xxxxxx"    # 待验证密文
-        verify_result = verify(plain, check)
+        verify_result = verify(plain, check) #verify_result为True，表明验证签名
+        成功，否则验证签名失败
     ```
 
